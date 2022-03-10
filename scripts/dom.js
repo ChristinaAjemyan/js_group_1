@@ -17,7 +17,7 @@ function showMessage(message) {
 const span = document.querySelector('#mySpan');
 const div = document.getElementById('myDiv');
 
-const newSpan = document.createElement('span');
+let newSpan = document.createElement('span');
 newSpan.innerText = ' new span';
 newSpan.id = 'newSpan';
 newSpan.style.color = 'red';
