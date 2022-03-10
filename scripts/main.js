@@ -401,3 +401,75 @@ function myFunction(arr) {
     return obj;
 }
 
+function createPersonObject(firstName, lastName, age) {
+    const obj = {
+        firstName: firstName,
+        lastName: lastName,
+        age: age,
+        fullName: function() {
+            return firstName + ' ' + lastName;
+        }()
+    }
+    return obj;
+}
+
+const person1 = createPersonObject('John', 'Doe', 30);
+// console.log(person1)
+
+function addUserColor(obj, color) {
+    obj.favoriteColor = color;
+}
+
+// addUserColor(person1, 'red');
+// console.log(person1);
+
+const users = [
+    {
+        id: 1,
+        name: "John",
+        lastName: "Doe",
+        age: 20
+    },
+    {
+        id: 2,
+        name: "Joe",
+        lastName: "Tribiano",
+        age: 22
+    },
+    {
+        id: 3,
+        name: "Chandler",
+        lastName: "Bing",
+        age: 23
+    },
+    {
+        id: 4,
+        name: "Ross",
+        lastName: "Geller",
+        age: 25
+    },
+    {
+        id: 5,
+        name: "Monica",
+        lastName: "Geller",
+        age: 20
+    },
+    {
+        id: 6,
+        name: "Rachel",
+        lastName: "Grin",
+        age: 20
+    },
+]
+
+
+function getById(num) {
+    return users.find(function(user)
+   {
+       return user.id===num
+   })
+   
+
+    
+}
+// console.log(getById(2))
