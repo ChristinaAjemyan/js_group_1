@@ -33,6 +33,7 @@ const colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
     '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
 ];
 
+
 const sizes = [
     [100, 100],
     [56, 78],
@@ -148,3 +149,95 @@ let myfunc = (arr, num) => {
 // setTimeout(()=>{
 //     div.classList.toggle('transparent')
 // }, 4000)
+
+function famousUserText(obj) {
+    let birthOfDate = new Date().getFullYear();
+    let str = `${obj.name} ${obj.lastName} is famous actor born in ${birthOfDate - obj.age}`;
+    document.querySelector('#person').innerHTML = str;
+}
+
+function notFamousUserText() {
+    let str = `This user is not famous`;
+    document.querySelector('#person').innerHTML = str;
+}
+
+
+
+// const user3 = users.find(user => user.id === 1);
+
+// user3.isFamous === true ? famousUserText(user3) : notFamousUserText();
+
+// function getDays(startDate, endDate) {
+//     let start = new Date(startDate)
+//     let end = new Date(endDate)
+//     let dayCount = 0;
+//     while (end > start) {
+//         dayCount++
+//         start.setDate(start.getDate() + 1)
+//     }
+
+//     return dayCount
+// }
+// console.log(getDays('2022.01.01', '2022.03.13'));
+// let thisYear = new Date(1994).getFullYear();
+// console.log(getDays(`${thisYear}.01.06`, new Date()));
+
+// const clockSpan = document.getElementById('clock');
+// let date = new Date();
+// clockSpan.innerHTML = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+// setInterval(() => {
+//     let date = new Date();
+//     clockSpan.innerHTML = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+// }, 1000)
+
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+let arr2 = [1, 2, 3]
+function shuffle(arr) {
+    // 0 1 2
+    let newArr = [];
+    let usedIndexes = [];
+    while (newArr.length !== arr.length) {
+        let randomIndex = Math.floor(Math.random() * arr.length);
+        if (!usedIndexes.includes(randomIndex)) {
+            newArr.push(arr[randomIndex]);
+            usedIndexes.push(randomIndex);
+        }
+    }
+    console.log(newArr)
+}
+
+// shuffle(arr2)
+
+// function myfunc1(arr){
+//     let x = '<hjsdfjhsdjd5654jdjdjn,:'
+//     let str = ''
+//     for(let i =0;i<arr;i++){
+//         str+=x.charAt(Math.random() * x.length)
+//     }
+//     return str
+// }
+// console.log(myfunc1(8))
+
+
+
+// function myNewFunc() {
+//   let str = '';
+//   let min = 33;
+//   let max = 126;
+//   for (let i = 0; i < 8; i++) {
+
+//    str += String.fromCharCode(Math.floor(Math.random()*(max- min)+min))
+
+//   }
+
+//     console.log(str)
+// }
+
+// myNewFunc()
+
+const button = document.getElementById('buttonToClickOn')
+button.addEventListener('click', (event) => {
+    console.log(event)
+})
