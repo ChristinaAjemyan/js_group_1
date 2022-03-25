@@ -237,7 +237,142 @@ function shuffle(arr) {
 
 // myNewFunc()
 
-const button = document.getElementById('buttonToClickOn')
-button.addEventListener('click', (event) => {
-    console.log(event)
-})
+// const button = document.getElementById('buttonToClickOn')
+// button.addEventListener('click', (event) => {
+//     console.log(event)
+// })
+
+// let square = document.querySelector('.runningDiv');
+
+// document.querySelector('.runningDiv').addEventListener('mousemove', () => {
+
+//     let top = Math.floor(Math.random() * 100)
+//     let left = Math.floor(Math.random() * 100)
+//     square.style.top = top + '%'
+//     square.style.left = left + '%'
+// })
+
+// document.getElementById('textInput').addEventListener('input', ()=>{
+//     console.log('input')
+// })
+// document.getElementById('textInput').addEventListener('change', (event)=>{
+//     console.log('change', event.target.value)
+
+// })
+
+// let arr = [1,2,3,4,5,6,7,8];
+// let arr3 = [];
+// arr.forEach((tiv, index)=>{
+//     console.log(tiv, index)
+// })
+
+let nestedObjects = [
+    {
+        name: 'Employee',
+        children: [
+            {
+                name: 'Vacation',
+            },
+            {
+                name: 'Salary'
+            },
+            {
+                name: 'Positions',
+                children: [
+                    {
+                        name: 'Management',
+                    },
+                    {
+                        name: 'Developement',
+                        children: [
+                            {
+                                name: 'Mobile'
+                            },
+                            {
+                                name: 'Web'
+                            }
+                        ]
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        name: 'Dashboard',
+    },
+    {
+        name: 'Documents'
+    },
+    {
+        name: 'Settings',
+        children: [
+            {
+                name: 'Company details'
+            },
+            {
+                name: 'User details'
+            }
+        ]
+    }
+]
+
+function factorial(num) {
+    if (num <= 0) {
+        return 1
+    } else {
+        return (num * factorial(num - 1))
+    }
+}
+// console.log(factorial(4))
+
+function displayName(array) {
+    let ul = document.createElement('ul');
+    array.forEach(el => {
+        let li = document.createElement('li');
+        ul.appendChild(li)
+        if (el.children) {
+            li.innerHTML = el.name
+            li.appendChild(displayName(el.children))
+        } else {
+            li.innerHTML = el.name
+        }
+    })
+    return ul;
+}
+// document.body.appendChild(displayName(nestedObjects))
+function createChessBoard() {
+    let evenColor;
+    let oddColor;
+    for (let i = 0; i < 9; i++) {
+        let row = document.createElement('div');
+        row.classList.add('row');
+        if (i % 2 === 0) {
+            evenColor = 'white';
+            oddColor = 'black';
+        } else {
+            evenColor = 'black';
+            oddColor = 'white';
+        }
+        for (let j = 0; j < 9; j++) {
+            let col = document.createElement('div');
+            col.classList.add('col');
+            if (i === 0 && j !== 0) {
+                col.innerHTML = String.fromCharCode(96 + j)
+            }
+            if (i !== 0 && j == 0) {
+                col.innerHTML = i
+            }
+            if (i > 0 && j > 0) {
+                if (j % 2 !== 0) {
+                    col.classList.add(evenColor)
+                } else {
+                    col.classList.add(oddColor)
+                }
+            }
+
+            row.appendChild(col)
+        }
+        document.getElementById('chessBoard').appendChild(row)
+    }
+}
+createChessBoard();
