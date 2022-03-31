@@ -369,10 +369,12 @@ function createChessBoard() {
                     col.classList.add(oddColor)
                 }
             }
-
+            col.addEventListener('click',()=>{
+                alert(String.fromCharCode(96 + j)+ i)
+            })
             row.appendChild(col)
         }
         document.getElementById('chessBoard').appendChild(row)
     }
 }
-createChessBoard();
+// createChessBoard();
