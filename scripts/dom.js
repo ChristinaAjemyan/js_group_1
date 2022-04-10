@@ -1,7 +1,11 @@
-
+"use strict"
 function showMessage(message) {
     const div = document.getElementById('myDiv');
     div.innerHTML = message;
+}
+
+function getValue() {
+console.log(document.getElementById('textInput').invalid)
 }
 
 // let i = 2;
@@ -369,8 +373,8 @@ function createChessBoard() {
                     col.classList.add(oddColor)
                 }
             }
-            col.addEventListener('click',()=>{
-                alert(String.fromCharCode(96 + j)+ i)
+            col.addEventListener('click', () => {
+                alert(String.fromCharCode(96 + j) + i)
             })
             row.appendChild(col)
         }
@@ -378,3 +382,62 @@ function createChessBoard() {
     }
 }
 // createChessBoard();
+
+function trafficLights() {
+    let red = document.querySelector('.red')
+    let yellow = document.querySelector('.yellow')
+    let green = document.querySelector('.green')
+    console.log(red, yellow, green)
+    let redTime = 5000;
+    let greenTime = 10000;
+    let yellowTime = 2000;
+    changeColors()
+    function changeColors() {
+        let countRed = redTime / 1000;
+        let countIntervalRed = setInterval(() => {
+            red.innerHTML = `<span class='count'>${countRed--}</span>`
+        }, 1000)
+        setTimeout(() => {
+            clearInterval(countIntervalRed)
+            red.innerHTML = ''
+            red.classList.toggle('active');
+            yellow.classList.toggle('active');
+            let countYellow = yellowTime / 1000;
+            let countIntervalYellow = setInterval(() => {
+                console.log(countYellow)
+                yellow.innerHTML = `<span class='count'>${countYellow--}</span>`
+            }, 1000)
+            setTimeout(() => {
+                clearInterval(countIntervalYellow)
+                yellow.innerHTML = ''
+                yellow.classList.toggle('active');
+                green.classList.toggle('active');
+                let countGreen = greenTime / 1000;
+                let countIntervalGreen = setInterval(() => {
+                    green.innerHTML = `<span class='count'>${countGreen--}</span>`
+                }, 1000)
+                setTimeout(() => {
+                    clearInterval(countIntervalGreen)
+                    green.innerHTML = ''
+                    green.classList.toggle('active');
+                    red.classList.toggle('active');
+                }, greenTime)
+            }, yellowTime)
+        }, redTime)
+    }
+    setInterval(() => {
+        changeColors()
+    }, redTime + greenTime + yellowTime)
+
+}
+// trafficLights()
+
+let reg = /abc/gi;
+
+let reg2 = new RegExp('abc', 'gi')
+
+let text1 = `example text which contains Abc in it and another work abc`;
+
+let a = reg.exec(text1);
+let m = text1.match(reg);
+console.log(m)
