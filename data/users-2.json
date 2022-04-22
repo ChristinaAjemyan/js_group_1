@@ -1,0 +1,112 @@
+[
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar5.jpg",
+      "age": 40,
+      "name": "Conrad Castillo",
+      "gender": "male",
+      "email": "conradcastillo@exosis.com",
+      "phone": "+1 (838) 504-3606",
+      "address": "980 Opal Court, Rushford, Nebraska, 8855",
+      "about": "Dolor sint cillum ex ad anim incididunt velit tempor incididunt deserunt nulla. Incididunt excepteur in Lorem eu qui laboris dolore nostrud aliqua sit reprehenderit consectetur. Est irure anim deserunt cillum aute pariatur eu officia in anim cupidatat deserunt ex. Sunt esse ea est pariatur in ex reprehenderit pariatur commodo enim sunt amet. Exercitation tempor aliqua amet aliqua consectetur Lorem deserunt aliquip velit exercitation qui. Aliqua fugiat occaecat eiusmod ut adipisicing ipsum officia mollit magna est et aute tempor non.\r\n",
+      "hobbies": "Play music"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar1.jpg",
+      "age": 23,
+      "name": "Helen Castro",
+      "gender": "female",
+      "email": "helencastro@exosis.com",
+      "phone": "+1 (845) 531-2817",
+      "address": "678 Lorimer Street, Sehili, Hawaii, 8259",
+      "about": "Aute mollit aliquip pariatur esse eu est ex ex. Commodo dolore sunt proident ea velit nulla occaecat eu ea sit velit nostrud culpa. Laboris deserunt occaecat et ipsum qui consectetur occaecat commodo esse ipsum irure esse. Est et eu eiusmod esse commodo pariatur Lorem dolore ullamco ea qui Lorem aliqua laboris. Veniam eiusmod commodo aute enim labore.\r\n",
+      "hobbies": "Watch movie"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar2.jpg",
+      "age": 40,
+      "name": "Tamra Diaz",
+      "gender": "female",
+      "email": "tamradiaz@exosis.com",
+      "phone": "+1 (949) 485-3269",
+      "address": "614 Poplar Avenue, Highland, Nevada, 3948",
+      "about": "Ea Lorem Lorem laborum commodo nisi magna non. Reprehenderit ad dolor ad aliquip cupidatat irure incididunt nulla. Aliquip adipisicing aliqua reprehenderit proident proident elit sunt. Dolore esse deserunt laborum occaecat et aliquip proident proident. Amet ea eu labore in enim. Eu ea nisi consequat aliquip laborum. Tempor commodo cillum laborum irure non nisi excepteur incididunt eu consectetur tempor.\r\n",
+      "hobbies": "Watch movie"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar3.jpg",
+      "age": 33,
+      "name": "Hinton Branch",
+      "gender": "male",
+      "email": "hintonbranch@exosis.com",
+      "phone": "+1 (802) 461-3900",
+      "address": "654 Highland Avenue, Brewster, Texas, 2818",
+      "about": "Nostrud nulla voluptate dolore officia ad aliqua occaecat quis exercitation. Irure et esse dolore adipisicing velit esse laboris irure. Deserunt exercitation eu et irure cupidatat sint ipsum ipsum elit reprehenderit.\r\n",
+      "hobbies": "Play football"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar4.jpg",
+      "age": 29,
+      "name": "Kramer Benson",
+      "gender": "male",
+      "email": "kramerbenson@exosis.com",
+      "phone": "+1 (890) 573-2244",
+      "address": "237 Jefferson Avenue, Zarephath, North Dakota, 993",
+      "about": "Culpa sint commodo proident aliquip adipisicing est proident in do deserunt amet cupidatat culpa laboris. Anim est amet ea ut commodo nisi pariatur Lorem. Duis elit eiusmod et Lorem officia eu sunt non qui consectetur enim. Laborum duis esse magna consequat ullamco irure velit duis incididunt non. Tempor est quis tempor laborum eu veniam nostrud nisi cupidatat aliqua anim Lorem irure mollit.\r\n",
+      "hobbies": "Play music"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar6.jpg",
+      "age": 30,
+      "name": "Lang Nicholson",
+      "gender": "male",
+      "email": "langnicholson@exosis.com",
+      "phone": "+1 (933) 592-2247",
+      "address": "194 Gerald Court, Germanton, Arkansas, 5695",
+      "about": "Anim aliqua esse et Lorem anim. Pariatur dolor in id tempor aliquip id qui non proident ullamco velit cupidatat. Ipsum sit aliquip deserunt ea commodo. Voluptate et irure non Lorem adipisicing mollit nostrud officia commodo. Amet officia ullamco ullamco pariatur eu fugiat aliquip consectetur ex culpa pariatur dolor cillum nostrud.\r\n",
+      "hobbies": "Play music"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar7.jpg",
+      "age": 29,
+      "name": "Walls Rogers",
+      "gender": "male",
+      "email": "wallsrogers@exosis.com",
+      "phone": "+1 (854) 530-3220",
+      "address": "837 Doone Court, Thermal, Alaska, 3311",
+      "about": "Esse qui nisi do nisi. Deserunt commodo aute culpa sit nostrud minim duis consequat eu excepteur occaecat magna nostrud. Fugiat velit exercitation reprehenderit aliquip nisi.\r\n",
+      "hobbies": "Play music"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar1.jpg",
+      "age": 32,
+      "name": "Gray Velasquez",
+      "gender": "male",
+      "email": "grayvelasquez@exosis.com",
+      "phone": "+1 (924) 462-3590",
+      "address": "404 Monroe Place, Levant, Indiana, 8710",
+      "about": "Ad et qui nostrud adipisicing ipsum esse voluptate sunt do esse fugiat. Voluptate eu nostrud veniam proident sint non. Elit excepteur nisi cillum minim reprehenderit anim. Ullamco proident qui ad deserunt consectetur. Do consectetur sit sunt sit. Et reprehenderit sint duis non ipsum deserunt quis anim consectetur laboris do.\r\n",
+      "hobbies": "Play football"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar3.jpg",
+      "age": 23,
+      "name": "Watkins Torres",
+      "gender": "male",
+      "email": "watkinstorres@exosis.com",
+      "phone": "+1 (861) 516-3087",
+      "address": "305 Delevan Street, Succasunna, Montana, 8964",
+      "about": "Aliqua qui in est ut deserunt minim minim occaecat. Laborum exercitation sunt culpa ullamco Lorem aliqua deserunt sint veniam. Cillum proident mollit minim aute deserunt sit culpa amet consequat enim enim labore.\r\n",
+      "hobbies": "Play music"
+    },
+    {
+      "picture": "https://ericssonr.nsdbytes.com/assets/images/sm/avatar3.jpg",
+      "age": 36,
+      "name": "Maxine Gilmore",
+      "gender": "female",
+      "email": "maxinegilmore@exosis.com",
+      "phone": "+1 (961) 563-2166",
+      "address": "535 Jaffray Street, Nord, Virginia, 7323",
+      "about": "Excepteur incididunt adipisicing quis nulla exercitation do sit. Sint do reprehenderit nisi ipsum consectetur incididunt exercitation fugiat ipsum Lorem incididunt ex magna mollit. Cillum voluptate occaecat nisi deserunt nostrud non laboris.\r\n",
+      "hobbies": "Play music"
+    }
+  ]
