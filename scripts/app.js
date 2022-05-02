@@ -68,15 +68,6 @@ let object = {
     }
 }
 
-// try {
-//     console.log(object);
-//     // console.log(x)
-//     // console.log(object.o.p);
-// } catch (err) {
-//     console.log('error', err);
-// } finally {
-//     console.log('finally')
-// }
 let json = '{ "age": 30, "name":"asdsadas" }'; // incomplete data
 
 try {
@@ -95,10 +86,6 @@ try {
 }
 
 
-
-
-// throw 10
-
 async function f() {
 
     let promise = new Promise((resolve, reject) => {
@@ -113,16 +100,6 @@ async function f() {
     // alert(result); // "done!"
 }
 
-// console.log(1);
-// f();
-// console.log(2);
-
-
-
-// fetch('https://raw.githubusercontent.com/ChristinaAjemyan/js_group_1/master/data/users-2.json')
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-// console.log('after try catch')
 
 fetch('https://raw.githubusercontent.com/ChristinaAjemyan/js_group_1/master/data/users-2.json',
     {
@@ -132,7 +109,39 @@ fetch('https://raw.githubusercontent.com/ChristinaAjemyan/js_group_1/master/data
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        console.log(response)
         const result = await response.json()
         console.log(result)
     })
+
+function multiplactionTable(max) {
+    for (let i = 1; i < max; i++) {
+        let div = '<div class="col">'
+        for (let j = 1; j < 10; j++) {
+            let col = `<p>${i}*${j}=${j * i}</p>`;
+            div += col;
+        }
+        div += '</div>'
+        document.getElementById("multiplactionTable").innerHTML = document.getElementById("multiplactionTable").innerHTML+div;
+        console.log(div)
+
+    }
+}
+// multiplactionTable(10)
+
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+
+    getArea() {
+        return this.radius**2*Math.PI;
+    }
+
+    getPerimeter() {
+        return this.radius*2*Math.PI;
+    }
+}
+
+const circle1=new Circle(10);
+console.log(circle1.getPerimeter())
+console.log(circle1.getArea())
